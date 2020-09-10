@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #f2f9ff;
+}
+
+.wrapper{
+    width: 400px;
+    height: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F3F9FF;
+    padding: 1rem;
+}
+
+.register{
+    line-height: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #2376b2;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form .form-validate{
+    margin: 0.2rem 0;
+}
+
+input{
+    width: 100%;
+   border: 1px solid rgb(206, 204, 204);
+   padding: 0.5rem 0.2rem;
+   margin: 0.1rem 0 0;
+   outline: none;
+}
+
+.form-validate small{
+    font-family: sans-serif;
+    color: red;
+    visibility: hidden;
+}
+.form-validate.error small{
+    visibility: visible;
+}
+
+.form-validate input:active{
+    border-color: gray;
+}
+
+.form-validate.success input{
+    border-color:  green;
+}
+
+.form-validate.error input{
+    border-color:  red;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+    color: #2376b2;
+    font-weight: bold;
+}
+
+.btn{
+    padding: 0.4rem 1rem;
+    text-transform: capitalize;
+    color: honeydew;
+    background: #2376b2;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn:hover{
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F3F9FF;
+    outline: none;
+}
+
+

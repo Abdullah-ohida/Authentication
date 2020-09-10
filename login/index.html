@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/style.css">
+    <script src="/login/login.js" defer></script>
+    <title>Login-form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h2>login form</h2>
+        </div>
+        <form action="" class="form" novalidate>
+            <div class="form-validate">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="Enter email">
+                <small>Error message</small>
+            </div>
+            <div class="form-validate">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+            <input type="submit" class="btn" value="enter">
+            <p class="register">Don't have an account? <a href="/register/index.html">Register</a></p>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>

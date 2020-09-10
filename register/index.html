@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/register/style.css">
+       <!-- fontawesome -->
+       <!-- <script src="https://kit.fontawesome.com/e2052a1ca7.js" crossorigin="anonymous"></script> -->
+    <title>Client side form-validation</title>
+    <script src="/register/register.js" defer></script>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <h2>Register with us</h2>
+        </header>
+        <form action="" class="form" novalidate>
+            <div class="form-validate">
+                <label for="username">first name</label>
+                <input type="text" name="username" id="first-name" placeholder="Enter your first name">
+                <small>Error message</small>
+            </div>
+            <div class="form-validate">
+                <label for="username">last name</label>
+                <input type="text" name="username" id="last-name" placeholder="Enter your last name">
+                <small>Error message</small>
+            </div>
+            <div class="form-validate">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" >
+                <small>Error message</small>
+            </div>
+            <div class="form-validate">
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your  password">
+                <small>Error message</small>
+            </div>
+            <div class="form-validate">
+                <label for="comfirm">confirm password</label>
+                <input type="password" name="comfirm" id="comfirm" placeholder="Enter password again">
+                <small>Error message</small>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn">submit</button>
+            </div>
+        </form>
+        <p class="register">Already have an account? <a href="/login/index.html">Login</a></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>
