@@ -40,10 +40,10 @@ const url = 'http://209.97.141.22:3000'
 // Check required input
 function createUser(email, firstName, lastName, password) {
    let userValue = {
-        'p_email': `${email.value}`,
-       'p_first_name': `${firstName.value}`,
-       'p_last_name': `${lastName.value}`,
-       'p_pass': `${password.value}`
+        'p_email': email,
+       'p_first_name': firstName,
+       'p_last_name': lastName,
+       'p_pass': password
     }
     fetch(`${url}/rpc/register_user`,{
         method: 'POST',
@@ -66,6 +66,7 @@ function createUser(email, firstName, lastName, password) {
 
 //Check user and redirect
 function displayResult(user){
+    console.log(user)
     if (user.code == "23514"){
         Swal.fire({
             icon: 'error',
@@ -74,7 +75,7 @@ function displayResult(user){
         })
     }
     if (user.message === "Success"){
-        window.location.href = '/login/index.html';
+        window.location.href = '/index.html';
         console.log(user.message);
     }
   

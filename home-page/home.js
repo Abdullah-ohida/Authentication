@@ -1,6 +1,6 @@
 let tokenValue = localStorage.getItem('token');
 if(!tokenValue){
-    window.location.href = '/login/index.html';
+    window.location.href = '/index.html';
 }
 const logoutBtn = document.querySelector('.log-out');
 logoutBtn.addEventListener('click', function () {

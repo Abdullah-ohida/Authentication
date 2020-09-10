@@ -43,7 +43,7 @@ function createUser(email, password) {
        return response.json()
     })
     .then((data)=>{
-        console.log(data, 'datttttaaaa')
+        // console.log(data, 'datttttaaaa')
         if(data.code === '28P01'){
             Swal.fire({
                 icon: 'error',
@@ -55,7 +55,7 @@ function createUser(email, password) {
         }
         if(data.token) {
             localStorage.setItem("token", data.token);
-            window.location.href = '/home-page/index.html';
+            window.location.href = '/home-page/home.html';
         }
     })
     .catch((error) => {
