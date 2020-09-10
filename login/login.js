@@ -58,7 +58,9 @@ function createUser(email, password) {
             window.location.href = '/home-page/home.html';
         }
     })
-   
+    .catch((error) => {
+        console.error("Error", error);
+    });
 }
 
 
